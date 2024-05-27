@@ -69,3 +69,4 @@ console.log(combined);
 // 객체 속성 전개
 let{one,three,five,...rest} = combined;
 console.log(one,three,five,rest);
+

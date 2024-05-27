@@ -55,7 +55,7 @@ console.log(ingr,"> 김장재료:",ingr.join(", "));
 let fruits = [];
 console.log(fruits.push("Apple"),fruits);
 console.log(fruits.push("Banana"),fruits);
-console.log(fruits.push("Carrot"),fruits);
+console.log(fruits.push("Carot"),fruits);
 
 // 인출 : pop > 배열의 뒤에서 인출
 console.log(fruits.pop(),fruits);
@@ -67,7 +67,7 @@ console.log(fruits.pop(),fruits);
 console.log(fruits);
 console.log(fruits.push("Apple"),fruits);
 console.log(fruits.push("Banana"),fruits);
-console.log(fruits.push("Carrot"),fruits);
+console.log(fruits.push("Carot"),fruits);
 // Shift : 배열의 첫번쨰 요소를 인출후 삭제
 console.log(fruits.shift(),fruits);
 console.log(fruits.shift(),fruits);
@@ -128,7 +128,7 @@ fruits.sort((v1,v2) => {
     //  0 =   순서 변하지않음(순위가 같다)
         if(v1 < v2)  return 1;
         if(v1 > v2)  return -1;
-        if(v1 = v2) return 0;
+        if(v1 == v2) return 0;
 });
 console.log(fruits);
 
