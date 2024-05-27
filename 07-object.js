@@ -71,3 +71,5 @@ const Member = function(name, position) {
         return `안녕하세요, ${this}님`;
     }
     console.log("둘리".sayHi());
+
+    

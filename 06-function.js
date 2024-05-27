@@ -13,7 +13,7 @@ console.log(sum(10,20));
 //              > 변수에 할당 될수있다
 const asum = function(a, b) { 
      console.log(typeof a, typeof b);
-    return a + b;
+     return a + b;
 }
 
 console.log(typeof asum);
@@ -88,3 +88,6 @@ const f3_arrow = (a,b) => {
 // 콜백 함수에 화살표 함수로 계산식 정의
 calculator(10,20,(v1,v2) => v1+v2);
 calculator(10,20,(v1,v2) => v1*v2);
+
+// 콜백 함수 활용 > Array 추가 강의
+
