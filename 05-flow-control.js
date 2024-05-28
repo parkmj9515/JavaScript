@@ -98,3 +98,21 @@ for (let dan = 2; dan <= 9; dan ++) {
 //     console.log(stars);
 //     count --;
 // }
+
+
+// TODOfor ...in, for...of
+// for ...in > 객체의 속성 순회 , 객체의 속성 키를 반복
+const obj ={
+    name:"홍길동",
+    age : 28,
+    job: "도적"
+}
+for(let key in obj) {
+    console.log(`${key} -> ${obj[key]}`);
+}
+
+// for...of >  배열을 순회
+const arr = [1,2,3,4,5];
+for(let item of arr) {
+    console.log(item);
+}
