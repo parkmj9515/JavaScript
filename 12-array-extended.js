@@ -152,14 +152,13 @@ function testDataPipeline() {
     const totalSum = sortedStudents.reduce((acc,student)=> acc + student.total,0);
     console.log("총점 240점이상 학생들의 총점: ",totalSum);
     
-    const avgTotalScore = totalSum / sortedStudents.length;
-    console.log("총점 240점이상 학생들의 총점 평균: ",totalSum);
-    console.log("데이터파이프라인 구축: ",data.map(data.map(student => ({
-        ...student,
-        total: student.kor + student.eng + student.math
-    })).filter(student => student.total >=240)
-        .sort(((a,b) => a.total - b.total)
-        .reduce((acc,student)=> acc + student.total,0)/3)
-)
+    console.log("데이터 파이프라인 구축:",
+    data.map(student => ({
+        ...student, 
+        total: student.kor + student.eng + student.math 
+    }))
+    .filter(student => student.total >= 240)
+    .sort((a, b) => b.total - a.total)
+    .reduce((acc, student) => acc + student.total, 0) / 3);
 }
 
