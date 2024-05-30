@@ -23,7 +23,7 @@ function testAttribute() {
     // 루프를 돌면서 속성 변경
     for(let i=0; i < subs.length; i++) {
         subs[i].setAttribute("title",`제품:${subs[i].getAttribute("title")}`);
-    }
+    };
 }
 // testAttribute();
 
