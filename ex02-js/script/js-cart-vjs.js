@@ -36,10 +36,10 @@
      itemNode.innerText = item;  // 컨텐츠 추가
      let toolbar = document.createElement("div");
      toolbar.style.display = "inline";
-     // toolbar.style.cssFloat = "right";
+     toolbar.style.cssFloat = "right";
      let btnDel = document.createElement("button");
      btnDel.innerText = "삭제";
-     btnDel.style.float = "right";
+    //  btnDel.style.float = "right";
      
      toolbar.append(btnDel);
      itemNode.append(toolbar);

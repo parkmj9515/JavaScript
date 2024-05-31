@@ -17,7 +17,7 @@ function testAttribute() {
     mainImage.setAttribute("title",`제품:${mainImage.getAttribute('title')}`)
     console.log("변경된 Title: ",mainImage.getAttribute('title'));
 
-    // 하단 프로덕츠 이미지들의 title 속성도 변경
+    // 하단 프로덕츠 이미지들의 title 속성 변경
     let subs = document.getElementsByClassName("sub-image");
     console.log(".sub-image :",subs);
     // 루프를 돌면서 속성 변경
