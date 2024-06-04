@@ -123,6 +123,7 @@
                     //  영화 목록 정보
                     const movies = data.movies;
                     // console.log(movies);    //  Array
+               
 
                     //  loop
                     for (let i = 0; i < movies.length; i++) {
@@ -136,7 +137,10 @@
                         const year = movie.year;
                         const poster = "http://localhost:3000/images/" + 
                                     movie.image;
+                                  
                         console.log(title, director, poster);
+
+                        const newWindow = window.open("", "_blank");
 
                         //  tr 요소를 생성 -> 정보 연결 -> table#list의 자식 요소로 추가
                         const tr = $("<tr>");   //  tr 요소 생성
